@@ -33,4 +33,4 @@ for timeframe in timeframes:
                     f.write(content+'\n')
         counter +=1
         if counter % 20 == 0:
-            print(counter*limit, 'ows completed so far.')
+            print(counter*limit, 'rows completed so far.')
