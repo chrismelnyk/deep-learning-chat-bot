@@ -22,5 +22,15 @@ for timeframe in timeframes:
             with open("test.to",'a', encoding='utf8') as f:
                 for content in df['comment'].values:
                     f.write(content+'\n')
-
             test_done = True
+
+        else:
+            with open("train.from",'a', encoding='utf8') as f:
+                for content in df['parent'].values:
+                    f.write(content+'\n')
+            with open("train.to",'a', encoding='utf8') as f:
+                for content in df['comment'].values:
+                    f.write(content+'\n')
+        counter +=1
+        if counter % 20 == 0:
+            print(counter*limit, 'ows completed so far.')
