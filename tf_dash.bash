@@ -1,0 +1,1 @@
+tensorboard --logdir=/train_log --host=localhost --port=6006
